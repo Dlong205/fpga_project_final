@@ -1,0 +1,30 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\regfile.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\uart_frame.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_core.sv'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_top.sv'
+Compiling module 'watchdog_top'("C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_top.sv":5)
+Compiling module 'watchdog_core'("C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_core.sv":7)
+Compiling module 'regfile'("C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\regfile.sv":11)
+Compiling module 'uart_frame'("C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\uart_frame.sv":2)
+NOTE  (EX0101) : Current top module is "watchdog_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final.vg" completed
+[100%] Generate report file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,29 @@
+{
+ "Device" : "GW1N-1P5C",
+ "Files" : [
+  {
+   "Path" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/regfile.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/uart_frame.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_core.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

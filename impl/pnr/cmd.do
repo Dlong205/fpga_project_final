@@ -1,0 +1,18 @@
+-d C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final.vg
+-p GW1N-1P5C-QFN48XF-7
+-pn GW1N-UV1P5QN48XFC7/I6
+-cst C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\kiwi1p5.cst
+-cfg C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\device.cfg
+-sdc C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\kiwi1p5.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 10
+-global_freq 50.000

@@ -1,0 +1,23 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//Device: GW1N-UV1P5 | Board: Kiwi 1P5 EVK
+
+IO_LOC  "clk"       4;
+IO_PORT "clk"       IO_TYPE=LVCMOS33;
+
+IO_LOC  "btn_wdi_n" 35;
+IO_PORT "btn_wdi_n" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "btn_en_n"  36;
+IO_PORT "btn_en_n"  IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "led_wdo"   27;
+IO_PORT "led_wdo"   IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC  "led_enout" 28;
+IO_PORT "led_enout" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC  "uart_rx"   33;
+IO_PORT "uart_rx"   IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "uart_tx"   34;
+IO_PORT "uart_tx"   IO_TYPE=LVCMOS33 DRIVE=8;

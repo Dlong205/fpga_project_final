@@ -1,0 +1,29 @@
+Reading netlist file: "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final.vg"
+Parsing netlist file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\kiwi1p5.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\fpga_project_final.power.html" completed
+Generate file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\fpga_project_final.pin.html" completed
+Generate file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\fpga_project_final.rpt.html" completed
+Generate file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\fpga_project_final.rpt.txt" completed
+Generate file "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\pnr\fpga_project_final.tr.html" completed
+Sat Apr 25 17:34:16 2026
+

@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+  "InstLine" : 5,
+  "InstName" : "watchdog_top",
+  "ModuleFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+  "ModuleLine" : 5,
+  "ModuleName" : "watchdog_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+    "InstLine" : 46,
+    "InstName" : "u_core",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_core.sv",
+    "ModuleLine" : 7,
+    "ModuleName" : "watchdog_core"
+   },
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+    "InstLine" : 66,
+    "InstName" : "u_reg",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/regfile.sv",
+    "ModuleLine" : 11,
+    "ModuleName" : "regfile"
+   },
+   {
+    "InstFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/watchdog_top.sv",
+    "InstLine" : 88,
+    "InstName" : "u_uart",
+    "ModuleFile" : "C:/Gowin/Gowin_V1.9.12_x64/IDE/bin/Documents/fpga_project_final/src/uart_frame.sv",
+    "ModuleLine" : 2,
+    "ModuleName" : "uart_frame"
+   }
+  ]
+ }
+]

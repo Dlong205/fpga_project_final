@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1N-1P5C" package="QFN48XF" speed="7" partNumber="GW1N-UV1P5QN48XFC7/I6"/>
+    <FileList>
+        <File path="C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\regfile.sv" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\uart_frame.sv" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_core.sv" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\src\watchdog_top.sv" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\Documents\fpga_project_final\impl\gwsynthesis\fpga_project_final.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="vcc" value="3.3"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
