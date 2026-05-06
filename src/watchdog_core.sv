@@ -110,7 +110,7 @@ always_ff @(posedge clk or negedge rst_n) begin
     end
 end
 
-// Press = ON (EN=1), Release = OFF (EN=0)
+// Press = OFF (EN=1), Release = ON (EN=0)
 assign en_btn = ~s2_stable;
 
 // Combined signals
