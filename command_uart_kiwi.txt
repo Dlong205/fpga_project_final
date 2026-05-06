@@ -1,0 +1,80 @@
+===================================================================
+                DANH SÁCH LỆNH UART HEX - WATCHDOG
+===================================================================
+
+1. NHÓM LỆNH THAO TÁC TRỰC TIẾP (Không có Data, LEN = 0)
+-------------------------------------------------------------------
+55 03 00 00 03       // KICK
+55 04 10 00 14       // GET STATUS (Đọc trạng thái mạch)
+55 05 00 00 05       // RESET (Tắt khẩn cấp WDG, không xóa thời gian)
+
+
+2. NHÓM LỆNH GHI CÀI ĐẶT (WRITE CMD = 01, LEN = 04)
+-------------------------------------------------------------------
+55 01 00 04 01 00 00 00 04       // Tắt Watchdog (EN_SW = 1)
+55 01 00 04 00 00 00 00 05       // Bật Watchdog (EN_SW = 0)
+55 01 00 04 04 00 00 00 01       // Xóa lỗi (Clear Fault, bỏ qua chờ reset)
+
+55 01 04 04 40 06 00 00 47       // Cài tWD_ms = 1600 ms (Mặc định)
+55 01 04 04 88 13 00 00 9A       // Cài tWD_ms = 5000 ms
+
+55 01 08 04 C8 00 00 00 CD       // Cài tRST_ms = 200 ms (Mặc định)
+55 01 08 04 F4 01 00 00 F8       // Cài tRST_ms = 500 ms
+
+55 01 0C 04 C8 00 00 00 C1       // Cài arm_delay_us = 200 us
+
+
+3. NHÓM LỆNH ĐỌC THÔNG SỐ (READ CMD = 02, LEN = 0)
+-------------------------------------------------------------------
+55 02 00 00 02       // Đọc thanh ghi CTRL
+55 02 04 00 06       // Đọc thời gian đếm tWD_ms
+55 02 08 00 0A       // Đọc thời gian giữ Reset tRST_ms
+55 02 0C 00 0E       // Đọc thời gian trễ Arming arm_delay_us
+
+# //Xác nhận CTRL = 0x00 (HW+UART mode)
+55 01 00 04 00 00 00 00 05
+
+# Chuyển sang UART only (WDI_SRC=1)
+55 01 00 04 02 00 00 00 07
+
+# Ghi tWD_ms = 2000 ms (0x7D0) — dùng khi test nhanh
+55 01 04 04 D0 07 00 00 D8
+
+# Ghi tWD_ms = 1600 ms (default)
+55 01 04 04 40 06 00 00 43
+
+# KICK
+55 03 00 00 03
+
+# GET_STATUS
+55 04 00 00 04
+
+# Đọc CTRL
+55 02 00 00 02
+
+# CLR_FAULT (ghi CTRL[2]=1, tự clear sau 1 cycle)
+55 01 00 04 04 00 00 00 01
+
+# SOFT RESET toàn bộ
+55 06 00 00 06
+
+set arm 10s: 55 01 0C 04 10 27 00 00 3E
+
+lần 1 check status: 55 aa 05 00 00 00 af
+sau kick lần 1: 55 aa 15 00 00 00 bf
+- Khi chuyển sang kick only
+
+
+# 1. Disable
+55 01 00 04 01 00 00 00 04
+
+# 2. Ghi arm_delay = 10000ms = 10s (0x2710)
+#    D0=0x10 D1=0x27 D2=0x00 D3=0x00
+55 01 0C 04 10 27 00 00 3E
+
+# 3. Re-enable
+55 01 00 04 00 00 00 00 05
+
+# 4. Verify
+55 02 0C 00 0E
+# Expect: 55 AA 10 27 00 00 9D
